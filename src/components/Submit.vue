@@ -69,7 +69,7 @@ export default {
             myDate: this.form.myDate,
             description: this.form.description,
             income: this.form.income,
-            expense: this.form.expense ,
+            expense: this.form.expense,
             balance : this.total
         }
         console.log(payload);
@@ -78,20 +78,20 @@ export default {
         this.clearForm()
         },
     calTotal() {
-        if (this.form.income > 0 && this.form.expense === 0){
+        if (this.form.income > 0 && (this.form.expense === 0 || this.form.expense === '')){
             this.form.balance = this.total + parseInt(this.form.income)
             this.total = this.form.balance
         }
-        else if (this.form.income === 0 && this.form.expense > 0){
+        else if ((this.form.income === 0 || this.form.income == '' ) && this.form.expense > 0){
             this.form.balance = this.total - parseInt(this.form.expense)
             this.total = this.form.balance
         }
         },
     cal() {
-      if (this.form.income > 0 && this.form.expense === 0){
+      if (this.form.income > 0 && (this.form.expense === 0 || this.form.expense === '')){
             this.totalIncome += parseInt(this.form.income)
         }
-      else if (this.form.income === 0 && this.form.expense > 0){
+      else if ((this.form.income === 0 || this.form.income == '' ) && this.form.expense > 0){
             this.totalExpense += parseInt(this.form.expense)
         }
     }
