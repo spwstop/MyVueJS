@@ -1,19 +1,3 @@
-# myvuejs
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1.Run คำสั่ง npm install บน Command promt ใน Directory
+2.Run คำสั่ง npm run serve 
+3.ใส่ Url ตามผลที่ได้

@@ -1,0 +1,49 @@
+[
+    {
+    "id" : 1,
+    "myDate" : "25-07-2564",
+    "description": "พ่อให้เงิน",
+    "income": "2000",
+    "expense": "0",
+    "balance": "2000"
+    },
+
+    {
+    "id" : 2,
+    "myDate" : "25-07-2564",
+    "description": "ค่าอาหารเช้า",
+    "income": "0",
+    "expense": "200",
+    "balance": "1800"
+    },
+
+    {
+    "id" : 3,
+    "myDate" : "25-07-2564",
+    "description": "ค่าอาหารเย็น",
+    "income": "0",
+    "expense": "100",
+    "balance": "1700"
+    },
+
+    {
+    "id" : 3,
+    "myDate" : "26-07-2564",
+    "description": "ค่าอาหารเช้า",
+    "income": "0",
+    "expense": "400",
+    "balance": "1300"
+    },
+
+    {
+    "id" : 3,
+    "myDate" : "26-07-2564",
+    "description": "ค่าอาหารเย็น",
+    "income": "0",
+    "expense": "100",
+    "balance": "1200"
+    }
+        
+]
+
+

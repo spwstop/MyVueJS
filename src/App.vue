@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
@@ -18,8 +16,11 @@
 }
 
 #nav {
-  padding: 30px;
-
+  border: 4px solid black;
+  padding: 40px;
+  background-image: url(assets/head.gif);
+  background-size: 10%;
+  background-color: lightsalmon;
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -28,5 +29,8 @@
       color: #42b983;
     }
   }
+}
+body{
+  background-color: black;
 }
 </style>
