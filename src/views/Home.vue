@@ -31,7 +31,7 @@ img{
   background-image: url(../assets/bg.gif);
   background-size: 100%;
   background-color: rgb(255, 199, 177);
-  padding-bottom: 10%;
+  padding-bottom: 40px;
 }
 h1{
   color: white;

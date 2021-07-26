@@ -4,4 +4,4 @@
 2.Run คำสั่ง npm run serve 
 
 
-3.ใส่ Url ตามผลที่ได้
+3.ใส่ Url ตามผลที่ได้ ใน Browser

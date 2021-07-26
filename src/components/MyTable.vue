@@ -47,10 +47,7 @@ import DataStore from '@/store/MyData'
 export default {
   data() {
     return {
-      ledger: [],
-      totalIncome : 0,
-      totalExpense : 0,
-      totalBalance : 0
+      ledger: []
     }
   },
   created() {
@@ -62,6 +59,7 @@ export default {
 
       this.ledger = DataStore.getters.ledger
     },
+
   },
 
 

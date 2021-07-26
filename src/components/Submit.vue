@@ -28,6 +28,10 @@
       <br>
       <br>
 
+      <span>Total Income:  {{this.totalIncome}} </span>
+      <span>Total Expense:  {{this.totalExpense}} </span>
+      <span>Balance:  {{this.total}} </span>
+
   </div>
 </template>
 
@@ -44,6 +48,8 @@ export default {
           expense: 0,
           balance: 0
       },
+      totalIncome : 2000,
+      totalExpense : 800,
       total : 1200
     }
   },
@@ -59,23 +65,19 @@ export default {
         },
     addData() {
         this.calTotal()
-
-
-        console.log(this.form.balance);
-        console.log(this.total);
         let payload = {
             myDate: this.form.myDate,
             description: this.form.description,
             income: this.form.income,
-            expense: 0 ,
+            expense: this.form.expense ,
             balance : this.total
         }
         console.log(payload);
         DataStore.dispatch('addData', payload)
-
+        this.cal()
         this.clearForm()
         },
-        calTotal() {
+    calTotal() {
         if (this.form.income > 0 && this.form.expense === 0){
             this.form.balance = this.total + parseInt(this.form.income)
             this.total = this.form.balance
@@ -83,6 +85,14 @@ export default {
         else if (this.form.income === 0 && this.form.expense > 0){
             this.form.balance = this.total - parseInt(this.form.expense)
             this.total = this.form.balance
+        }
+        },
+    cal() {
+      if (this.form.income > 0 && this.form.expense === 0){
+            this.totalIncome += parseInt(this.form.income)
+        }
+      else if (this.form.income === 0 && this.form.expense > 0){
+            this.totalExpense += parseInt(this.form.expense)
         }
     }
     },
@@ -123,6 +133,9 @@ input{
     border-radius: 15px;
     margin : 5px;
     padding: 10px;
+}
+span{
+    color: white;
 }
 
     
